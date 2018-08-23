@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "css-loader": "^1.0.0",
+    "elm-webpack-loader": "^4.5.0",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "tachyons": "4.10.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "scripts": {
+    "build": "webpack",
+    "client": "webpack-dev-server --port 3000"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  },
+  "name": "elm-chatsurvey-editor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stefan Lapers <stefan@lapers.be>",
+  "license": "MIT"
+}

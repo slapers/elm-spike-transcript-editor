@@ -1,0 +1,68 @@
+@import './tachyon.scss';
+
+.editor {
+  height: calc(100vh - 5rem);
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  position: relative;
+
+  .canvas-bg {
+    position: absolute;
+    top:0; 
+    bottom: 0;
+    z-index: -1000;
+    width: 100000px;
+    height: 100000px;
+    top: -50000px;
+    left: -50000px;
+    background: linear-gradient(#dceefd,hsla(0,0%,100%,0) 1px),linear-gradient(90deg,#dceefd,hsla(0,0%,100%,0) 1px);
+    background-size: 10px 10px;
+    background-position: 0 0;
+  }
+
+  .canvas {
+    position: relative;
+  }
+
+  .message, .question {
+    position: absolute;
+    border: 2px solid var(--light-blue);
+    border-radius: 3px;
+    color: var(--black);
+    background-color: var(--white);
+    width: 400px;
+    cursor: move;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    &:hover {
+      border: 2px solid var(--blue);
+    }
+
+    .body{
+      min-height: 60px;
+      user-select: none;
+      margin: .5rem;
+      color: var(--black-80);
+    }
+    .next {
+      display: flex;
+      align-items: center;
+      border-top: 2px solid var(--light-blue);
+      height: 30px;
+
+      span {
+        color: var(--black-70);
+        font-size: .875rem;        
+        text-transform: uppercase;
+        margin: auto;
+      }
+    }
+  }
+
+  .question {
+    border-color: var(--yellow);
+    &:hover {
+      border: 2px solid var(--gold);
+    }
+  }
+}
